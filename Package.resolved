@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CocoaAsyncSocket",
+        "repositoryURL": "https://github.com/robbiehanson/CocoaAsyncSocket",
+        "state": {
+          "branch": null,
+          "revision": "dbdc00669c1ced63b27c3c5f052ee4d28f10150c",
+          "version": "7.6.5"
+        }
+      },
+      {
+        "package": "JKVValue",
+        "repositoryURL": "https://github.com/frizzle/JKVValue",
+        "state": {
+          "branch": "feature/spm-support",
+          "revision": "4dcbf96b145c8e92ecc4d4d0c12028fe790213bf",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

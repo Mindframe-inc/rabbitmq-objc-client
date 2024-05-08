@@ -4,7 +4,7 @@
 // The ASL v2.0:
 //
 // ---------------------------------------------------------------------------
-// Copyright (c) 2007-2024 Broadcom. All Rights Reserved. The term “Broadcom” refers to Broadcom Inc. and/or its subsidiaries. All rights reserved.
+// Copyright 2017-2022 VMware, Inc. or its affiliates.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -213,11 +213,6 @@ class MethodFixtures {
 
     static func connectionTuneOk() -> RMQConnectionTuneOk {
         return RMQConnectionTuneOk(channelMax: RMQShort(65535), frameMax: RMQLong(RMQFrameMax), heartbeat: RMQShort(60))
-    }
-
-    static func connectionUpdateSecret(_ secret: String,
-                                       reason: String) -> RMQConnectionUpdateSecret {
-        return RMQConnectionUpdateSecret(secret: RMQLongstr(secret), reason: RMQShortstr(reason))
     }
 
     static func exchangeBind(_ source: String, destination: String, routingKey: String) -> RMQExchangeBind {

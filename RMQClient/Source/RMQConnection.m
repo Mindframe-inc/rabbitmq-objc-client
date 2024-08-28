@@ -67,7 +67,7 @@
 @property (nonatomic, readwrite) id <RMQFrameHandler> frameHandler;
 @property (nonatomic, readwrite) id<RMQLocalSerialQueue> commandQueue;
 @property (nonatomic, readwrite) id<RMQWaiterFactory> waiterFactory;
-@property (nonatomic, weak, readwrite) id<RMQHeartbeatSender> heartbeatSender;
+@property (nonatomic, strong, readwrite) id<RMQHeartbeatSender> heartbeatSender;
 @property (nonatomic, weak, readwrite) id<RMQConnectionDelegate> delegate;
 @property (nonatomic, weak, readwrite) id <RMQChannel> channelZero;
 @property (nonatomic, readwrite) RMQConnectionConfig *config;
